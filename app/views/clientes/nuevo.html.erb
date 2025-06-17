@@ -1,0 +1,95 @@
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+  <div class="container mx-auto px-4 py-16">
+    <div class="max-w-2xl mx-auto">
+      <!-- Header Section -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+          Nuevo Cliente
+        </h1>
+        <p class="text-xl text-gray-600">
+          Complete el formulario para registrar un nuevo cliente
+        </p>
+      </div>
+
+      <!-- Form Section -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <form action="#" method="post" class="space-y-6">
+          <!-- Nombre -->
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-gray-700">
+              Nombre completo
+            </label>
+            <input type="text" name="nombre" id="nombre" 
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">
+              Correo electrónico
+            </label>
+            <input type="email" name="email" id="email" 
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+          </div>
+
+          <!-- Teléfono -->
+          <div>
+            <label for="telefono" class="block text-sm font-medium text-gray-700">
+              Teléfono
+            </label>
+            <input type="tel" name="telefono" id="telefono" 
+                   class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+          </div>
+
+          <!-- Dirección -->
+          <div>
+            <label for="direccion" class="block text-sm font-medium text-gray-700">
+              Dirección
+            </label>
+            <textarea name="direccion" id="direccion" rows="3" 
+                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+          </div>
+
+          <!-- Tipo de Cliente -->
+          <div>
+            <label for="tipo" class="block text-sm font-medium text-gray-700">
+              Tipo de Cliente
+            </label>
+            <select name="tipo" id="tipo" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+              <option value="">Seleccione un tipo</option>
+              <option value="individual">Individual</option>
+              <option value="empresa">Empresa</option>
+              <option value="gobierno">Gobierno</option>
+            </select>
+          </div>
+
+          <!-- Botones -->
+          <div class="flex justify-end space-x-4 pt-4">
+            <a href="/" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded-lg transition duration-300">
+              Cancelar
+            </a>
+            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+              Guardar Cliente
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Status Section -->
+      <div class="mt-8 bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-lg font-semibold mb-4 text-gray-900">Estado del Sistema</h3>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <span class="text-gray-600">Base de datos:</span>
+            <span class="text-green-600 font-semibold">✅ Conectada</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-600">Formulario:</span>
+            <span class="text-green-600 font-semibold">✅ Listo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
